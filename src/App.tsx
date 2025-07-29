@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Heart, Shield, Truck, Phone, Mail, MapPin, Star, Cross, ChevronDown } from 'lucide-react';
 
+
 const testimonials = [
   {
     name: "Maria Santos",
