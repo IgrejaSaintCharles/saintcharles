@@ -279,6 +279,7 @@ function App() {
                 </div>
 
                 <div className="text-center">
+                  <a href="https://go.paradisepagbr.com/iocwrzpdqk" target="_blank" rel="noopener noreferrer">
                   <button 
                     className="text-white font-bold py-4 px-8 rounded-full text-xl shadow-lg transform hover:scale-105 transition-all duration-200"
                     style={{
@@ -293,6 +294,7 @@ function App() {
                   >
                     QUERO MINHA IMAGEM GRÁTIS
                   </button>
+                  </a>
                   <p className="text-sm text-gray-600 mt-3">
                     Clique e preencha seus dados para receber
                   </p>
@@ -369,9 +371,11 @@ function App() {
           <p className="text-xl mb-8 opacity-90">
             Milhares de famílias já receberam suas imagens sagradas
           </p>
+          <a href="https://example.com" target="_blank" rel="noopener noreferrer">
           <button className="bg-amber-500 hover:bg-amber-600 font-bold py-4 px-12 rounded-full text-xl shadow-lg transform hover:scale-105 transition-all duration-200" style={{color: '#56231b'}}>
             SOLICITAR MINHA IMAGEM AGORA
           </button>
+          </a>
           <p className="text-sm mt-4 opacity-75">
             Oferta por tempo limitado
           </p>
