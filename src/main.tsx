@@ -7,7 +7,9 @@ import './index.css';
 import { initFacebookPixel } from './pixel.ts';
 
 // 👉 Inicializa o pixel ANTES da renderização
-initFacebookPixel();
+initFacebookPixel()
+console.log('Pixel do Facebook carregado');
+;
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
