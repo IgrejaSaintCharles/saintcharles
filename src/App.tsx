@@ -1,8 +1,6 @@
+tsx
 import React, { useState, useEffect, useRef } from 'react';
 import { Heart, Shield, Truck, Phone, Mail, MapPin, Star, Cross, ChevronDown } from 'lucide-react';
-
-
-
 
 const testimonials = [
   {
@@ -11,7 +9,7 @@ const testimonials = [
     text: "Com certeza revigorou a energia da minha casa, recebi uma carta feita a mão do padre junto á imagem, só tenho a agradecer pelas bênçãos.",
     rating: 5
   },
-   {
+  {
     name: "Ana Costa",
     location: "Belo Horizonte, MG",
     text: "Trouxe uma paz inexplicável para nossa família, a carta personalizada do padre foi um toque especial. Recomendo de coração!",
@@ -136,6 +134,13 @@ function App() {
     setDragOffset(0);
     setStartX(0);
     setCurrentX(0);
+  };
+
+  // Função para rastrear cliques nos botões com Meta Pixel
+  const handleButtonClick = (buttonId: string) => {
+    if (typeof window.fbq !== 'undefined') {
+      window.fbq('trackCustom', 'ButtonClick', { button: buttonId });
+    }
   };
 
   return (
@@ -282,20 +287,22 @@ function App() {
 
                 <div className="text-center">
                   <a href="https://go.paradisepagbr.com/iocwrzpdqk" target="_blank" rel="noopener noreferrer">
-                  <button 
-                    className="text-white font-bold py-4 px-8 rounded-full text-xl shadow-lg transform hover:scale-105 transition-all duration-200"
-                    style={{
-                      background: 'linear-gradient(135deg, #56231b 0%, #7d3426 100%)',
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.background = 'linear-gradient(135deg, #7d3426 0%, #56231b 100%)';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.background = 'linear-gradient(135deg, #56231b 0%, #7d3426 100%)';
-                    }}
-                  >
-                    QUERO MINHA IMAGEM GRÁTIS
-                  </button>
+                    <button 
+                      id="product-button"
+                      className="text-white font-bold py-4 px-8 rounded-full text-xl shadow-lg transform hover:scale-105 transition-all duration-200"
+                      style={{
+                        background: 'linear-gradient(135deg, #56231b 0%, #7d3426 100%)',
+                      }}
+                      onClick={() => handleButtonClick('product-button')}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.background = 'linear-gradient(135deg, #7d3426 0%, #56231b 100%)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.background = 'linear-gradient(135deg, #56231b 0%, #7d3426 100%)';
+                      }}
+                    >
+                      QUERO MINHA IMAGEM GRÁTIS
+                    </button>
                   </a>
                   <p className="text-sm text-gray-600 mt-3">
                     Clique e preencha seus dados para receber
@@ -370,13 +377,18 @@ function App() {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Não Perca Esta Oportunidade Única
           </h2>
-          <p className="text-xl mb-8 opacity-90">
+          <p className="text-xl mb8 opacity-90">
             Milhares de famílias já receberam suas imagens sagradas
           </p>
           <a href="https://go.paradisepagbr.com/iocwrzpdqk" target="_blank" rel="noopener noreferrer">
-          <button className="bg-amber-500 hover:bg-amber-600 font-bold py-4 px-12 rounded-full text-xl shadow-lg transform hover:scale-105 transition-all duration-200" style={{color: '#56231b'}}>
-            SOLICITAR MINHA IMAGEM AGORA
-          </button>
+            <button 
+              id="cta-button"
+              className="bg-amber-500 hover:bg-amber-600 font-bold py-4 px-12 rounded-full text-xl shadow-lg transform hover:scale-105 transition-all duration-200" 
+              style={{color: '#56231b'}}
+              onClick={() => handleButtonClick('cta-button')}
+            >
+              SOLICITAR MINHA IMAGEM AGORA
+            </button>
           </a>
           <p className="text-sm mt-4 opacity-75">
             Oferta por tempo limitado
@@ -407,7 +419,6 @@ function App() {
               <p className="text-gray-600">contato@stcharlesborromeu.com</p>
             </div>
             
-        
           </div>
         </div>
       </section>
@@ -415,7 +426,6 @@ function App() {
       {/* Footer */}
       <footer className="text-white py-8" style={{backgroundColor: '#56231b'}}>
         <div className="container mx-auto px-4 text-center">
-          
           <p className="text-amber-200 mb-4">
             Espalhando a devoção de Nossa Senhora Aparecida com amor e fé
           </p>
