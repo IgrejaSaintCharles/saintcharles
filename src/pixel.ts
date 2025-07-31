@@ -1,27 +1,31 @@
 declare global {
   interface Window {
-    fbq: any;
-    _fbq: any;
+    fbq?: (...args: any[]) => void;
   }
 }
 
 export const initFacebookPixel = () => {
-  !(function (f: any, b, e, v, n?, t?, s?) {
-    if (f.fbq) return;
-    n = f.fbq = function () {
-      n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-    };
-    if (!f._fbq) f._fbq = n;
-    n.push = n;
-    n.loaded = true;
-    n.version = '2.0';
-    n.queue = [];
-    t = b.createElement(e);
-    t.async = true;
-    t.src = v;
-    s = b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t, s);
-  })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+  if (window.fbq) return;
+
+  const fbq = function (...args: any[]) {
+    (fbq as any).callMethod
+      ? (fbq as any).callMethod(...args)
+      : (fbq as any).queue.push(args);
+  };
+
+  (fbq as any).push = (fbq as any);
+  (fbq as any).loaded = true;
+  (fbq as any).version = '2.0';
+  (fbq as any).queue = [];
+
+  window.fbq = fbq;
+
+  const script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://connect.facebook.net/en_US/fbevents.js';
+
+  const firstScript = document.getElementsByTagName('script')[0];
+  firstScript?.parentNode?.insertBefore(script, firstScript);
 
   window.fbq('init', '1299418058437952');
   window.fbq('track', 'PageView');
