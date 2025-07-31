@@ -1,6 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Heart, Shield, Truck, Phone, Mail, MapPin, Star, Cross, ChevronDown } from 'lucide-react';
 
+import { useEffect } from 'react';
+import { initFacebookPixel } from './pixel';
+
+function App() {
+  useEffect(() => {
+    initFacebookPixel();
+  }, []);
+
+  return null; // Nenhum conteúdo visual necessário se foco é só o Pixel
+}
+
 
 const testimonials = [
   {
