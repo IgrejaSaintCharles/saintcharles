@@ -257,7 +257,7 @@ function App() {
                   Imagem Sagrada de Nossa Senhora Aparecida
                 </h2>
                 <div className="space-y-4 mb-8">
-                  <div className="flex items-center space-x-3"><img
+                  <div className="flex items-center space-x-3">
                     <Heart className="w-6 h-6 text-red-500" />
                     <span className="text-lg">Feita com amor e devoção</span>
                   </div>
