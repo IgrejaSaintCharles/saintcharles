@@ -3,7 +3,12 @@ import './VideoCarousel.css';
 
 const VideoCarousel: React.FC = () => {
   const [currentVideo, setCurrentVideo] = useState(0);
-  const videoIds: string[] = ['m3Mm07NUUp0', 'R9DU4qj47DYg', 'FORyfkSUa4g']; // Substitua pelos IDs reais
+  const videoIds: string[] = [
+    'm3Mm07NUUp0', // Substitua por seu primeiro ID de vídeo
+    'R9DU4qj47DY', // Substitua por seu segundo ID de vídeo
+    'FORyfkSUa4g', // Substitua por seu terceiro ID de vídeo
+    // Adicione mais IDs aqui se tiver mais vídeos
+  ];
 
   const nextVideo = () => {
     setCurrentVideo((prev) => (prev + 1) % videoIds.length);
@@ -20,7 +25,7 @@ const VideoCarousel: React.FC = () => {
       </button>
       <div className="carousel-video">
         <iframe
-          src={`https://www.youtube.com/embed/${videoIds[currentVideo]}?rel=0`}
+          src={`https://www.youtube.com/embed/${videoIds[currentVideo]}?rel=0&showinfo=0&modestbranding=1`}
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
