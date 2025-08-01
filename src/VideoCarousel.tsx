@@ -3,7 +3,7 @@ import './VideoCarousel.css';
 
 const VideoCarousel: React.FC = () => {
   const [currentVideo, setCurrentVideo] = useState(0);
-  const videoIds: string[] = ['VIDEO_ID_1', 'VIDEO_ID_2', 'VIDEO_ID_3']; // Substitua pelos IDs reais
+  const videoIds: string[] = ['m3Mm07NUUp0', 'R9DU4qj47DYg', 'FORyfkSUa4g']; // Substitua pelos IDs reais
 
   const nextVideo = () => {
     setCurrentVideo((prev) => (prev + 1) % videoIds.length);
