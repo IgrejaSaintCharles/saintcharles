@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Heart, Shield, Truck, Phone, Mail, MapPin, Star, Cross, ChevronDown } from 'lucide-react';
-
-
-
+import VideoCarousel from './VideoCarousel.tsx'; // Importe o componente criado
 
 const testimonials = [
   {
@@ -11,7 +9,7 @@ const testimonials = [
     text: "Com certeza revigorou a energia da minha casa, recebi uma carta feita a mão do padre junto á imagem, só tenho a agradecer pelas bênçãos.",
     rating: 5
   },
-   {
+  {
     name: "Ana Costa",
     location: "Belo Horizonte, MG",
     text: "Trouxe uma paz inexplicável para nossa família, a carta personalizada do padre foi um toque especial. Recomendo de coração!",
@@ -19,7 +17,7 @@ const testimonials = [
   },
   {
     name: "João Silva",
-    location: "Rio de Janeiro, RJ", 
+    location: "Rio de Janeiro, RJ",
     text: "Transformou completamente o ambiente do meu lar, veio acompanhada de uma linda oração manuscrita. Gratidão imensa!",
     rating: 5
   }
@@ -364,6 +362,16 @@ function App() {
         </div>
       </section>
 
+      {/* Video Carousel - Provas Sociais em Vídeo */}
+      <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12" style={{ color: '#56231b' }}>
+            Provas Sociais em Vídeo
+          </h2>
+          <VideoCarousel />
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 text-white" style={{background: 'linear-gradient(135deg, #56231b 0%, #7d3426 100%)'}}>
         <div className="container mx-auto px-4 text-center">
@@ -406,8 +414,6 @@ function App() {
               <h3 className="font-bold text-lg mb-2">Email</h3>
               <p className="text-gray-600">contato@stcharlesborromeu.com</p>
             </div>
-            
-        
           </div>
         </div>
       </section>
@@ -415,7 +421,6 @@ function App() {
       {/* Footer */}
       <footer className="text-white py-8" style={{backgroundColor: '#56231b'}}>
         <div className="container mx-auto px-4 text-center">
-          
           <p className="text-amber-200 mb-4">
             Espalhando a devoção de Nossa Senhora Aparecida com amor e fé
           </p>
