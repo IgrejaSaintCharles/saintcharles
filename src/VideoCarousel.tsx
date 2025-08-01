@@ -25,7 +25,7 @@ const VideoCarousel: React.FC = () => {
       </button>
       <div className="carousel-video">
         <iframe
-          src={`https://www.youtube.com/embed/${videoIds[currentVideo]}?rel=0&showinfo=0&modestbranding=1&iv_load_policy=3&controls=0`}
+          src={`https://www.youtube.com/embed/${videoIds[currentVideo]}?rel=0&showinfo=0&modestbranding=1&iv_load_policy=3&controls=0&fs=0&autohide=1&autoplay=0`}
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen

@@ -7,16 +7,17 @@
 
 .carousel-video {
   width: 100%;
-  max-width: 300px; /* Mantém o tamanho vertical */
+  max-width: 300px; /* Tamanho fixo para proporção 9x16 */
   margin: 0 auto;
-  overflow: hidden; /* Garante que bordas excedentes sejam cortadas */
+  overflow: hidden; /* Corta bordas excedentes */
 }
 
 .carousel-video iframe {
   width: 100%;
-  height: 533.33px; /* Proporção 9x16 para Shorts */
+  height: 533.33px; /* 300px * 16/9 ≈ 533.33px */
   border: none;
   display: block; /* Remove espaçamentos extras */
+  object-fit: cover; /* Garante que o vídeo ocupe o espaço sem barras */
 }
 
 .carousel-arrow {
