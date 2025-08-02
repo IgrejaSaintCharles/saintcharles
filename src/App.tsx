@@ -164,10 +164,10 @@ function App() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <div className="bg-amber-500 text-white px-6 py-3 rounded-full font-semibold text-lg shadow-lg flex items-center gap-2" style={{backgroundColor: '#d97706', color: '#56231b'}}>
                 <Cross className="w-5 h-5" />
-                TOTALMENTE GRÁTIS
+                IMAGEM GRÁTIS
               </div>
               <div className="text-amber-300 font-medium">
-                Apenas pagamento do frete
+                Frete Fixo R$14,90 para todas regiões do Brasil
               </div>
             </div>
             
