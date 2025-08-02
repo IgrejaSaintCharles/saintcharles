@@ -4,8 +4,8 @@ import './VideoCarousel.css';
 const VideoCarousel: React.FC = () => {
   const [currentVideo, setCurrentVideo] = useState(0);
   const videoIds: string[] = [
-    'm3Mm07NUUp0', // Substitua por seu primeiro ID de vídeo
-    'R9DU4qj47DY', // Substitua por seu segundo ID de vídeo
+    'R9DU4qj47DY', // Substitua por seu primeiro ID de vídeo
+    'm3Mm07NUUp0', // Substitua por seu segundo ID de vídeo
     'FORyfkSUa4g', // Substitua por seu terceiro ID de vídeo
     // Adicione mais IDs aqui se tiver mais vídeos
   ];
