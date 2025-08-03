@@ -182,12 +182,12 @@ function App() {
 
 
       {/* Video Carousel - Devotos que Receberam Bênçãos */}
+      <section id="projeto"></section>
       <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-12" style={{ color: '#56231b' }}>
             Devotos que Receberam Bênçãos
           </h2>
-          <section id="projeto"></section>
           <VideoCarousel />
         </div>
       </section>
