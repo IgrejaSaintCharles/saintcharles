@@ -254,7 +254,7 @@ function App() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="order-2 md:order-1">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{color: '#56231b'}}>
-                  Imagem Sagrada de Nossa Senhora Aparecida
+                  Imagem Abençoada de Nossa Senhora Aparecida
                 </h2>
                 <div className="space-y-4 mb-8">
                   <div className="flex items-center space-x-3">
@@ -268,6 +268,10 @@ function App() {
                   <div className="flex items-center space-x-3">
                     <Cross className="w-6 h-6 text-amber-600" />
                     <span className="text-lg">Abençoada pelo Padre José Magana</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Truck className="w-6 h-6 text-amber-600" />
+                    <span className="text-lg">Frete R$14,90 para todo o Brasil</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Truck className="w-6 h-6 text-amber-600" />
