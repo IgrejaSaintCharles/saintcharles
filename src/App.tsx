@@ -187,12 +187,14 @@ function App() {
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-12" style={{ color: '#56231b' }}>
             Devotos que Receberam Bênçãos
           </h2>
+          <section id="projeto"></section>
           <VideoCarousel />
         </div>
       </section>
+      
 
       {/* Church History Slider */}
-      <section id="projeto">
+      
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12" style={{color: '#56231b'}}>
@@ -250,7 +252,7 @@ function App() {
           </div>
         </div>
       </section>
-      </section>
+      
 
       {/* Product Section */}
       <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
