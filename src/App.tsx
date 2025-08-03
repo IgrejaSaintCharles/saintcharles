@@ -189,6 +189,10 @@ function App() {
             Devotos que Receberam Bênçãos
           </h2>
           <VideoCarousel />
+          {/* Seta para baixo */}
+      <div className="mt-8 flex justify-center">
+        <ChevronDown className="w-8 h-8 text-amber-600 animate-bounce" />
+      </div>
         </div>
       </section>
       
