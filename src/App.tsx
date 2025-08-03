@@ -150,7 +150,7 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-amber-900 via-amber-800 to-amber-900 text-white py-16 md:py-24" style={{background: 'linear-gradient(135deg, #ffffffff 0%, #ffffffff 50%, #ffffffff 100%)'}}>
+      <section className="relative bg-gradient-to-r from-amber-900 via-amber-800 to-amber-900 text-white py-16 md:py-24" style={{background: 'linear-gradient(135deg, #ffffffff 100%, #ffffffff 100%, #ffffffff 100%)'}}>
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
