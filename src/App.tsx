@@ -275,8 +275,8 @@ function App() {
                     <span className="text-lg">Abençoada pelo Padre José Magana</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Truck className="w-6 h-6 text-amber-600" />
-                    <span className="text-lg">Frete R$ 14,90 para todo o Brasil</span>
+                    <Heart className="w-6 h-6 text-amber-600" />
+                    <span className="text-lg">Contribuição de R$20,00 para o projeto</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Truck className="w-6 h-6 text-amber-600" />
