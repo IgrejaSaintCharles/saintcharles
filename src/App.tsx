@@ -32,7 +32,7 @@ const churchHistory = [
   {
     title: "Sorrisos que Transformam",
     description: "Graças ao apoio dos nossos devotos, levamos alegria, presentes e esperança para centenas de crianças em datas especiais.",
-    image: "/00419765.png"
+    image: "/ChatGPT Image 2 de jul. de 2025, 17_39_42.jpg"
   },
   {
     title: "Nossa Devoção",
