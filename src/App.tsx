@@ -150,16 +150,16 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-amber-900 via-amber-800 to-amber-900 text-white py-16 md:py-24" style={{background: 'linear-gradient(135deg, #56231b 0%, #7d3426 50%, #56231b 100%)'}}>
+      <section className="relative bg-gradient-to-r from-amber-900 via-amber-800 to-amber-900 text-white py-16 md:py-24" style={{background: 'linear-gradient(135deg, #ffffffff 0%, #ffffffff 50%, #ffffffff 100%)'}}>
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-              Resgate agora sua Imagem de
+               Contribua com nosso projeto e receba a Imagem de
               <span className="block text-amber-300 mt-2">Nossa Senhora Aparecida</span>
             </h1>
             <p className="text-lg md:text-xl mb-8 opacity-90">
-              Uma oportunidade única de ter em sua casa a proteção e bênção da Padroeira do Brasil
+              Ao participar, você apoia ações solidárias que levam alimento, brinquedos e fé a centenas de famílias carentes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <div className="bg-amber-500 text-white px-6 py-3 rounded-full font-semibold text-lg shadow-lg flex items-center gap-2" style={{backgroundColor: '#d97706', color: '#56231b'}}>
@@ -167,7 +167,7 @@ function App() {
                 IMAGEM GRATUITA
               </div>
               <div className="text-amber-300 font-medium">
-                 Veja o que nossos devotos acharam
+                 Transparência e confiança: veja como sua contribuição faz diferença.
               </div>
             </div>
             
