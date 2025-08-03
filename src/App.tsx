@@ -150,34 +150,34 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-amber-900 via-amber-800 to-amber-900 text-white py-16 md:py-24" style={{background: 'linear-gradient(135deg, #ffffffff 100%, #ffffffff 100%, #ffffffff 100%)'}}>
-        <div className="absolute inset-0 bg-black opacity-20"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-               Contribua com nosso projeto e receba a Imagem de
-              <span className="block text-amber-300 mt-2">Nossa Senhora Aparecida</span>
-            </h1>
-            <p className="text-lg md:text-xl mb-8 opacity-90">
-              Ao participar, você apoia ações solidárias que levam alimento, brinquedos e fé a centenas de famílias carentes.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <div className="bg-amber-500 text-white px-6 py-3 rounded-full font-semibold text-lg shadow-lg flex items-center gap-2" style={{backgroundColor: '#d97706', color: '#56231b'}}>
-                <Cross className="w-5 h-5" />
-                IMAGEM GRATUITA
-              </div>
-              <div className="text-amber-300 font-medium">
-                 Transparência e confiança: veja como sua contribuição faz diferença.
-              </div>
-            </div>
-            
-            {/* Seta para baixo */}
-            <div className="mt-8 flex justify-center">
-              <ChevronDown className="w-8 h-8 text-amber-300 animate-bounce" />
-            </div>
-          </div>
+<section className="relative bg-white text-black py-16 md:py-24">
+  <div className="container mx-auto px-4 relative z-10">
+    <div className="text-center max-w-4xl mx-auto">
+      <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+        Contribua com nosso projeto e receba a Imagem de
+        <span className="block text-amber-700 mt-2">Nossa Senhora Aparecida</span>
+      </h1>
+      <p className="text-lg md:text-xl mb-8 opacity-90">
+        Ao participar, você apoia ações solidárias que levam alimento, brinquedos e fé a centenas de famílias carentes.
+      </p>
+      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="bg-amber-500 text-white px-6 py-3 rounded-full font-semibold text-lg shadow-lg flex items-center gap-2 hover:bg-amber-600 transition-colors">
+          <Cross className="w-5 h-5" />
+          Quero Contribuir
         </div>
-      </section>
+        <div className="text-amber-700 font-medium">
+          Transparência e confiança: veja como sua contribuição faz diferença.
+        </div>
+      </div>
+
+      {/* Seta para baixo */}
+      <div className="mt-8 flex justify-center">
+        <ChevronDown className="w-8 h-8 text-amber-700 animate-bounce" />
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Video Carousel - Devotos que Receberam Bênçãos */}
       <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
