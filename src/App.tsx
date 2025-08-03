@@ -311,7 +311,7 @@ function App() {
                       e.currentTarget.style.background = 'linear-gradient(135deg, #56231b 0%, #7d3426 100%)';
                     }}
                   >
-                    QUERO MINHA IMAGEM GRÁTIS
+                    QUERO CONTRIBUIR
                   </button>
                   </a>
                   <p className="text-sm text-gray-600 mt-3">
@@ -388,16 +388,13 @@ function App() {
             Não Perca Esta Oportunidade Única
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Milhares de famílias já receberam suas imagens sagradas
+            Cada imagem enviada é um gesto de fé, e um prato a mais na mesa de uma criança.
           </p>
           <a href="https://go.paradisepagbr.com/iocwrzpdqk" target="_blank" rel="noopener noreferrer">
           <button className="bg-amber-500 hover:bg-amber-600 font-bold py-4 px-12 rounded-full text-xl shadow-lg transform hover:scale-105 transition-all duration-200" style={{color: '#56231b'}}>
             SOLICITAR MINHA IMAGEM AGORA
           </button>
           </a>
-          <p className="text-sm mt-4 opacity-75">
-            Oferta por tempo limitado
-          </p>
         </div>
       </section>
 
