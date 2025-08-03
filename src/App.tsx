@@ -25,14 +25,14 @@ const testimonials = [
 
 const churchHistory = [
   {
-    title: "Comunidade Unida",
-    description: "Fazemos parte de uma comunidade de fiéis que compartilha o amor por Nossa Senhora Aparecida.",
+    title: "Mãos Que Alimentam",
+    description: "Fazemos do seu gesto de fé uma oportunidade de levar alimento e dignidade a crianças e famílias em situação de vulnerabilidade.",
     image: "/image.png"
   },
   {
-    title: "Tradição Familiar",
-    description: "Uma tradição que passa de geração em geração, mantendo viva a fé e devoção em nossos corações.",
-    image: "/ChatGPT Image 2 de jul. de 2025, 17_39_42.png"
+    title: "Sorrisos que Transformam",
+    description: "Graças ao apoio dos nossos devotos, levamos alegria, presentes e esperança para centenas de crianças em datas especiais.",
+    image: "/00419765.png"
   },
   {
     title: "Nossa Devoção",
@@ -193,7 +193,7 @@ function App() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12" style={{color: '#56231b'}}>
-            Nossa História de Fé
+            Conheça o nosso projeto
           </h2>
           <div className="relative max-w-4xl mx-auto">
             <div 
