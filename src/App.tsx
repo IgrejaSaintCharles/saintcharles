@@ -271,7 +271,7 @@ function App() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <Truck className="w-6 h-6 text-amber-600" />
-                    <span className="text-lg">Frete R$14,90 para todo o Brasil</span>
+                    <span className="text-lg">Frete R$ 14,90 para todo o Brasil</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Truck className="w-6 h-6 text-amber-600" />
