@@ -155,7 +155,7 @@ function App() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-              Receba Gratuitamente a Imagem de
+              Resgate agora sua Imagem de
               <span className="block text-amber-300 mt-2">Nossa Senhora Aparecida</span>
             </h1>
             <p className="text-lg md:text-xl mb-8 opacity-90">
@@ -164,7 +164,7 @@ function App() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <div className="bg-amber-500 text-white px-6 py-3 rounded-full font-semibold text-lg shadow-lg flex items-center gap-2" style={{backgroundColor: '#d97706', color: '#56231b'}}>
                 <Cross className="w-5 h-5" />
-                IMAGEM GRÁTIS
+                IMAGEM GRATUITA
               </div>
               <div className="text-amber-300 font-medium">
                  Veja o que nossos devotos acharam
