@@ -6,3 +6,12 @@ export default {
   },
   plugins: [],
 };
+
+module.exports = {
+  theme: {
+    extend: {
+      scrollBehavior: ['responsive'], // já vem no Tailwind por padrão a partir da v3
+    },
+  },
+  plugins: [],
+}
