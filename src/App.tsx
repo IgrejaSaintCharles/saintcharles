@@ -150,29 +150,31 @@ function App() {
       </header>
 
       {/* Hero Section */}
-<section className="relative bg-white text-black py-16 md:py-24">
+<section className="relative bg-white text-neutral-900 py-16 md:py-24">
   <div className="container mx-auto px-4 relative z-10">
     <div className="text-center max-w-4xl mx-auto">
       <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
         Contribua com nosso projeto e receba a Imagem de
-        <span className="block text-amber-700 mt-2">Nossa Senhora Aparecida</span>
+        <span className="block text-amber-600 mt-2">Nossa Senhora Aparecida</span>
       </h1>
       <p className="text-lg md:text-xl mb-8 opacity-90">
         Ao participar, você apoia ações solidárias que levam alimento, brinquedos e fé a centenas de famílias carentes.
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <div className="bg-amber-500 text-white px-6 py-3 rounded-full font-semibold text-lg shadow-lg flex items-center gap-2 hover:bg-amber-600 transition-colors">
+        <a
+          href="#projeto"
+          className="bg-amber-500 text-white px-6 py-3 rounded-full font-semibold text-lg shadow-lg flex items-center gap-2 hover:bg-amber-600 transition-colors"
+        >
           <Cross className="w-5 h-5" />
           Quero Contribuir
-        </div>
-        <div className="text-amber-700 font-medium">
+        </a>
+        <div className="text-amber-600 font-medium">
           Transparência e confiança: veja como sua contribuição faz diferença.
         </div>
       </div>
-
       {/* Seta para baixo */}
       <div className="mt-8 flex justify-center">
-        <ChevronDown className="w-8 h-8 text-amber-700 animate-bounce" />
+        <ChevronDown className="w-8 h-8 text-amber-600 animate-bounce" />
       </div>
     </div>
   </div>
@@ -190,11 +192,13 @@ function App() {
       </section>
 
       {/* Church History Slider */}
+      <section id="projeto">
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12" style={{color: '#56231b'}}>
             Conheça o nosso projeto
           </h2>
+          
           <div className="relative max-w-4xl mx-auto">
             <div 
               ref={sliderRef}
@@ -245,6 +249,7 @@ function App() {
             </div>
           </div>
         </div>
+      </section>
       </section>
 
       {/* Product Section */}
