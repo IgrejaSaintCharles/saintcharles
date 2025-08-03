@@ -37,7 +37,7 @@ const churchHistory = [
   {
     title: "Nossa Devoção",
     description: "Há mais de 95 anos dedicados à devoção de Nossa Senhora Aparecida, oferecendo imagens sagradas com amor e respeito.",
-    image: "https://images.pexels.com/photos/8468470/pexels-photo-8468470.jpeg?auto=compress&cs=tinysrgb&w=800"
+    image: "/oracao.png"
   }
 ];
 
@@ -167,7 +167,7 @@ function App() {
                 IMAGEM GRÁTIS
               </div>
               <div className="text-amber-300 font-medium">
-                Frete Fixo R$14,90 para todas regiões do Brasil
+                 Veja o que nossos devotos acharam
               </div>
             </div>
             
