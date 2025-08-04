@@ -282,7 +282,7 @@ function App() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <Heart className="w-6 h-6 text-amber-600" />
-                    <span className="text-lg">Contribuição de R$29,90 para o projeto</span>
+                    <span className="text-lg">Contribuição de R$19,90 para o projeto</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Truck className="w-6 h-6 text-amber-600" />
